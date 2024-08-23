@@ -18,5 +18,11 @@ select * from cliente  where endereco like "Tabuleiro%";
 
 # Ordenando os valores de cada sevidor do maior para o menor
 select * from servidor ORDER BY valor desc;
-#
-select * from
+
+# vai ordenar os sevidores em ordem alfabetica
+SELECT * FROM servidor ORDER BY nome;
+
+# vai pegar os valores até 200
+select * from servidor where valor limit 200;
+
+select 
