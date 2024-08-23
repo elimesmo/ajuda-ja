@@ -16,7 +16,7 @@ insert into pagamento(nome,cod) values("pix", 1),
 ("dinheiro", 2),
 ("cartão", 3);
 
-insert into clienteServidor(fk_cliente_cpf, fk_servidor_cpf) values("eligordo@gmail.com", "TONHO@GAMIL.COM");
-insert into servidorPagamento(fk_pagamento_cod, fk_servidor_cpf) values(1, "TONHO@GAMIL.COM");
+insert into clienteServidor(fk_cliente_cpf, fk_servidor_cpf) values("eligordo@gmail.com", "TONHO@GMAIL.COM");
+insert into servidorPagamento(fk_pagamento_cod, fk_servidor_cpf) values(1, "TONHO@GMAIL.COM");
 
-insert into servidorProfissao(fk_profissao_cod, fk_servidor_cpf) values(1, "TONHO@GAMIL.COM");
+insert into servidorProfissao(fk_profissao_cod, fk_servidor_cpf) values(1, "TONHO@GMAIL.COM");
