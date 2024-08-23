@@ -14,13 +14,14 @@ create table cliente(
 );
 
 create table servidor(
-	cpf varchar(20) unique,
+	cpf varchar(20) ,
     nome varchar(100),
     Horario_Disponivel  varchar(50),
 	endereco varchar(100),
     email varchar(100) unique,
 	senha varchar(50),
     valor double,
+    
     primary key(cpf)
 
 );
@@ -43,11 +44,12 @@ create table  pagamento(
 
 create table clienteServidor (
 
-	fk_cliente_cpf varchar(20) unique,
- 	fk_servidor_cpf varchar(20) unique,
+	dt date,
+	fk_cliente_cpf varchar(20),
+ 	fk_servidor_cpf varchar(20),
 	foreign key(fk_cliente_cpf) references cliente(cpf),
     foreign key(fk_servidor_cpf) references servidor(cpf),
-    primary key(fk_cliente_cpf, fk_servidor_cpf)
+    primary key(fk_cliente_cpf, fk_servidor_cpf, dt)
 
 );
 
