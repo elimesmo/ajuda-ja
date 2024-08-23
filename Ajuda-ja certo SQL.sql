@@ -7,14 +7,14 @@ create table cliente(
 	email varchar(50) unique,
     senha varchar(50),
     nome varchar(50),
-    endereço varchar(50),
+    endereco varchar(50),
     numero varchar(50) unique,
     primary key(cpf)
 
 );
 
 create table servidor(
-	cpf varchar(14),
+	cpf varchar(14) unique,
     nome varchar(50),
     Horario_Disponivel  varchar(50),
 	endereco varchar(50),
@@ -43,7 +43,7 @@ create table  pagamento(
 create table clienteServidor (
 
 	fk_cliente_cpf varchar(14) unique,
- 	fk_servidor_cpf varchar(14),
+ 	fk_servidor_cpf varchar(14) unique,
 	foreign key(fk_cliente_cpf) references cliente(cpf),
     foreign key(fk_servidor_cpf) references servidor(cpf),
     primary key(fk_cliente_cpf, fk_servidor_cpf)
@@ -61,7 +61,7 @@ create table servidorPagamento (
 
 );
 
-create table servidorCategoria (
+create table servidorProfissao (
 
 	fk_Profissao_cod int,
  	fk_servidor_cpf varchar(14),
