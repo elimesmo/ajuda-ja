@@ -8,7 +8,7 @@ select * from servidorPagamento where fk_pagamento_cod = "1";
 select * from profissao where nome = "professor";
 
 # ele vai contar quantos cliente esse servidor TONHO@GAMIL.COM tem
-select COUNT(fk_cliente_cpf) from clienteServidor where fk_servidor_cpf = "TONHO@GAMIL.COM";
+select COUNT(fk_cliente_cpf) from clienteServidor where fk_servidor_cpf = "313.114.316-90";
 
 # Vai pegar o servidor que recebe o valor menor que 200.00 
 select * from servidor where valor <= 200.00;
@@ -18,3 +18,5 @@ select * from cliente  where endereco like "Tabuleiro%";
 
 # Ordenando os valores de cada sevidor do maior para o menor
 select * from servidor ORDER BY valor desc;
+#
+select * from
