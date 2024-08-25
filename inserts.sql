@@ -5,7 +5,7 @@ values("612.212.122-12","eligordo@gmail.com","gordo3221","Gordinho da Silva Pint
 ("382.555.773-82","teo@gmail.com","teozinho123","teo dos santos","Tabuleiro, Rua fenando, 115","82 99232-5352"),
 ("122.975.123-82","ljsm@gmail.com","jhonson132","LIndonjhonson da Silva Machado","Tabuleiro, Rua fenando, 95","82 99876-5122"),
 ("192.761.093-70","Narc12@gmail.com","ciso8132","Adonai Roberto de Oliveira Narciso","Flexeiras, Rua lins, 45","82 97890-1542"),
-("134.921.012-50","DHL@gmail.com","dhs.lima@gmail.com","David Henrique de Souza Lima","Flexeiras, Rua caçolinha, 75","82 92376-3422"),
+("134.921.012-50","dhs.lima@gmail.com","DHL@gmail.com","David Henrique de Souza Lima","Flexeiras, Rua caçolinha, 75","82 92376-3422"),
 ("809.231.023-06","ciço34@gmail.com","ciço9032","José cicero dos Santos","Flexeiras,Rua Nova Flexeiras, 90","82 91276-0987");
 
 
