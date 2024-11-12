@@ -1,4 +1,5 @@
 
+
 insert into cliente(cpf,email,senha,nome,endereco,numero) 
 values("612.212.122-12","eligordo@gmail.com","gordo3221","Gordinho da Silva Pinto","Iraque, Rua lourenço, 85","82 99232-5342"), 
 ("602.455.773-92","jose@gmail.com","joselito123","jose da Silva","Tabuleiro, Rua ana, 55","82 99135-8342"),
@@ -26,20 +27,23 @@ insert into pagamento(nome,cod) values("pix", 1),
 ("dinheiro", 2),
 ("cartão", 3);
 
-insert into clienteServidor(fk_cliente_cpf, fk_servidor_email) values("612.212.122-12", "TONHO@GMAIL.COM"),
-("192.761.093-70","TONHO@GMAIL.COM"),("122.975.123-82", "eli@GMAIL.COM"),("809.231.023-06", "eli@GMAIL.COM"),
-("134.921.012-50", "TONHO@GMAIL.COM"),
-("382.555.773-82", "mg12@GMAIL.COM");
+insert into clienteServidor(fk_cliente_cpf, fk_servidor_cpf) values 
+("612.212.122-12", "309.198.752-01"),
+("192.761.093-70","313.114.316-90"),
+("122.975.123-82", "333.224.367-70"),
+("809.231.023-06", "312.876.122-05"),
+("134.921.012-50", "309.198.752-01"),
+("382.555.773-82", "312.876.122-05");
 
 
 
-insert into servidorPagamento(fk_pagamento_cod, fk_servidor_email) values(1, "TONHO@GMAIL.COM"),
-(2, "TONHO@GMAIL.COM"), (1, "mg12@GMAIL.COM"),(1, "eli@GMAIL.COM"),
-(3, "TONHO@GMAIL.COM"),(2, "eli@GMAIL.COM");
+insert into servidorPagamento(fk_pagamento_cod, fk_servidor_cpf) values(1, "313.114.316-90"),
+(2, "313.114.316-90"), (1, "312.876.122-05"),(1, "333.224.367-70"),
+(3, "313.114.316-90"),(2, "333.224.367-70");
                       
                                                                          
 
-insert into servidorProfissao(fk_profissao_cod, fk_servidor_email) values(1, "TONHO@GMAIL.COM"),(2, "eli@GMAIL.COM"),
-(3, "mg12@GMAIL.COM");
+insert into servidorProfissao(fk_profissao_cod, fk_servidor_cpf) values(1, "313.114.316-90"),(2, "333.224.367-70"),
+(3, "312.876.122-05");
                       
-
+	
