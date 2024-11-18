@@ -19,6 +19,7 @@ create table servidor(
     Horario_Disponivel  varchar(50),
     email varchar(50) unique,
 	endereco varchar(100),
+	  numero varchar(50) unique,
 	senha varchar(50),
     foto varchar(1000),
     valor double,
