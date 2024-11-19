@@ -14,15 +14,15 @@ create table cliente(
 );
 
 create table servidor(
-	cpf varchar(14) unique,
+    cpf varchar(14) unique,
     nome varchar(50),
     Horario_Disponivel  varchar(50),
     email varchar(50) unique,
-	endereco varchar(100),
-	  numero varchar(50) unique,
-	senha varchar(50),
+    endereco varchar(100),
+    senha varchar(50),
     foto varchar(1000),
     valor double,
+    numero varchar(50) unique,
     primary key(cpf)
     
 );
