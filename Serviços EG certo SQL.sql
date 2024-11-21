@@ -16,8 +16,13 @@ create table cliente(
 create table servidor(
     cpf varchar(14) unique,
     nome varchar(50),
+<<<<<<< HEAD
     Horario_Disponivel_entrada  varchar(50),
     Horario_Disponivel_saida varchar(50),
+=======
+    Horario_Disponivel  varchar(50),
+    Horario_Disp_Saida varchar(50)
+>>>>>>> f95ab4bd74ac25967b037818cbd291960e62e67a
     email varchar(50) unique,
     endereco varchar(100),
     senha varchar(50),
