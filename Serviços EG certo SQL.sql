@@ -16,7 +16,8 @@ create table cliente(
 create table servidor(
     cpf varchar(14) unique,
     nome varchar(50),
-    Horario_Disponivel  varchar(50),
+    Horario_Disponivel_entrada  varchar(50),
+    Horario_Disponivel_saida varchar(50),
     email varchar(50) unique,
     endereco varchar(100),
     senha varchar(50),
@@ -35,12 +36,24 @@ create table Profissao(
 
 );
 
-create table  pagamento(
- nome varchar(50),
+create table formasPagamento(
+	nome varchar(50),
 	cod int,
     primary key(cod)
 
 );
+
+CREATE TABLE pagamentos (
+    id INT AUTO_INCREMENT PRIMARY KEY,  
+    cliente_cpf varchar(14) , 
+    servidor_cpf varchar(14) ,
+    valor double,               
+    data_pagamento timestamp,            
+    descricao TEXT,                      
+    FOREIGN KEY (cliente_cpf) REFERENCES cliente(cpf),
+	FOREIGN KEY (servidor_cpf) REFERENCES servidor(cpf) 
+);
+
 
 
 
@@ -57,13 +70,13 @@ create table clienteServidor (
 
 
 
-create table servidorPagamento (
+create table servidorFormasPagamento (
 
-	fk_pagamento_cod int,
+	fk_formasPagamento_cod int,
  	fk_servidor_cpf varchar(14),
-	foreign key(fk_pagamento_cod) references pagamento(cod),
+	foreign key(fk_formasPagamento_cod) references formasPagamento(cod),
     foreign key(fk_servidor_cpf) references servidor(cpf),
-    primary key(fk_pagamento_cod, fk_servidor_cpf)
+    primary key(fk_formasPagamento_cod, fk_servidor_cpf)
 
 );
 

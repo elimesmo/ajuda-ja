@@ -12,14 +12,14 @@ values("612.212.122-12","eligordo@gmail.com","gordo3221","Gordinho da Silva Pint
 
 
 
-insert into servidor(cpf,email,senha,nome,Horario_Disponivel,endereco,valor,numero) 
-values("313.114.316-90", "TONHO@GMAIL.COM","tonho2007","TONHO","6:00","Flexeiras, Rua caçolinha", 200.00,"82 99364-5725" ),
-("333.224.367-70", "eli@GMAIL.COM","elimesmo666","eli","7:00", "Benedito, rua fernando lima", 150.00,"82 99645-8327"),
-("353.114.877-21","sandro@GMAIL.COM","sandinho157","sandro","6:00", "Guilherme, Rua Calheiros", 100.00,"82 99182-8532"),
-("309.198.752-01","Giva12@GMAIL.COM","pikachu622","Givanildo","12:00", "GUilherme, Rua Calheiros", 220.00,"82 99182-4613"),
-("312.876.122-05","mg12@GMAIL.COM","Moura412","Miguel","18:00", "GUilherme, Rua Calheiros", 165.50,"82 99157-9080");
+insert into servidor(cpf,email,senha,nome,Horario_Disponivel,endereco,valor) 
+values("313.114.316-90", "David","david1989","DAVID","6:00","Maceió, Rua caçolinha", 200.00),
+("333.224.367-70", "eli@GMAIL.COM","elimesmo666","eli","7:00", "Benedito, rua fernando lima", 150.00),
+("353.114.877-21","sandro@GMAIL.COM","sandinho157","sandro","6:00", "Guilherme, Rua Calheiros", 100.00),
+("309.198.752-01","Giva12@GMAIL.COM","pikachu622","Givanildo","12:00", "GUilherme, Rua Calheiros", 220.00),
+("312.876.122-05","mg12@GMAIL.COM","Moura412","Miguel","18:00", "GUilherme, Rua Calheiros", 165.50);
 
-insert into profissao(nome,cod) values("imformatica", 1),
+insert into profissao(nome,cod) values("informática", 1),
 ("professor", 2),
 ("mecanico", 3);
 
