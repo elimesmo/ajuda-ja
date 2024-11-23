@@ -1,7 +1,8 @@
 
 
 insert into cliente(cpf,email,senha,nome,endereco,numero) 
-values("612.212.122-12","eligordo@gmail.com","gordo3221","Gordinho da Silva Pinto","Alagoas, Flexeiras ,Iraque, Rua lourenço, 85","82 99232-5342"), 
+values
+("612.212.122-12","eligordo@gmail.com","gordo3221","Gordinho da Silva Pinto","Alagoas, Flexeiras ,Iraque, Rua lourenço, 85","82 99232-5342"), 
 ("602.455.773-92","jose@gmail.com","joselito123","jose da Silva","Alagos, Maceió, Tabuleiro, Rua ana, 55","82 99135-8342"),
 ("382.555.773-82","teo@gmail.com","teozinho123","teo dos santos","Alagos, Maceió, Tabuleiro, Rua fenando, 115","82 99232-5352"),
 ("122.975.123-82","ljsm@gmail.com","jhonson132","LIndonjhonson da Silva Machado","Alagos, Maceió, Tabuleiro, Rua fenando, 95","82 99876-5122"),
@@ -13,7 +14,8 @@ values("612.212.122-12","eligordo@gmail.com","gordo3221","Gordinho da Silva Pint
 
 
 insert into servidor(cpf,email,senha,nome,Horario_Disponivel_entrada,Horario_Disponivel_saida,endereco,valor, numero) 
-values("313.114.316-90", "David@gmail.com","david1989","David Henrique de Souza Lima","6:00","19:00","Alagoas, Maceió, Benedito", 200.00,"82 99533-4575"),
+values
+("313.114.316-90", "David@gmail.com","david1989","David Henrique de Souza Lima","6:00","19:00","Alagoas, Maceió, Benedito", 200.00,"82 99533-4575"),
 ("333.224.367-70", "eli@GMAIL.COM","elimesmo666","Elijamerson","7:00","18:00", "Alagoas, Maceió, Benedito", 150.00,"82 99533-2581"),
 ("353.114.877-21","sandro@GMAIL.COM","sandinho157","sandro","6:00","16:00", "Alagoas, Flexeiras, Guilherme", 100.00,"82 99533-9513"),
 ("309.198.752-01","Giva12@GMAIL.COM","pikachu622","Givanildo","12:00","19:00", "Alagoas, Flexeiras, GUilherme", 220.00,"82 99533-3572"),
