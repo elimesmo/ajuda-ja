@@ -34,10 +34,5 @@ FROM
     inner join
      Profissao p ON sp.fk_Profissao_cod = p.cod where cpf = "333.224.367-70";
 
-#tela de perfil do usuario (servidor e cliente)
-
-SELECT 
-    foto, nome, cpf, email, numero, endereco
-FROM servidor where cpf = "313.114.316-90";
 
  
