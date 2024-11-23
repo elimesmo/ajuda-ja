@@ -3,8 +3,8 @@ create database ServiçoEG;
 use ServiçoEG;
 
 create table cliente(
-	cpf varchar(14),
-	email varchar(50) unique,
+    cpf varchar(14),
+    email varchar(50) unique,
     senha varchar(50),
     nome varchar(50),
     endereco varchar(50),
@@ -16,13 +16,8 @@ create table cliente(
 create table servidor(
     cpf varchar(14) unique,
     nome varchar(50),
-<<<<<<< HEAD
     Horario_Disponivel_entrada  varchar(50),
     Horario_Disponivel_saida varchar(50),
-=======
-    Horario_Disponivel  varchar(50),
-    Horario_Disp_Saida varchar(50)
->>>>>>> f95ab4bd74ac25967b037818cbd291960e62e67a
     email varchar(50) unique,
     endereco varchar(100),
     senha varchar(50),
@@ -42,8 +37,8 @@ create table Profissao(
 );
 
 create table formasPagamento(
-	nome varchar(50),
-	cod int,
+    nome varchar(50),
+    cod int,
     primary key(cod)
 
 );
@@ -56,7 +51,7 @@ CREATE TABLE pagamentos (
     data_pagamento timestamp,            
     descricao TEXT,                      
     FOREIGN KEY (cliente_cpf) REFERENCES cliente(cpf),
-	FOREIGN KEY (servidor_cpf) REFERENCES servidor(cpf) 
+    FOREIGN KEY (servidor_cpf) REFERENCES servidor(cpf) 
 );
 
 
@@ -64,9 +59,9 @@ CREATE TABLE pagamentos (
 
 create table clienteServidor (
 
-	fk_cliente_cpf varchar(14),
- 	fk_servidor_cpf varchar(14),
-	foreign key(fk_cliente_cpf) references cliente(cpf),
+    fk_cliente_cpf varchar(14),
+    fk_servidor_cpf varchar(14),
+    foreign key(fk_cliente_cpf) references cliente(cpf),
     foreign key(fk_servidor_cpf) references servidor(cpf),
     primary key(fk_cliente_cpf, fk_servidor_cpf)
    
@@ -77,9 +72,9 @@ create table clienteServidor (
 
 create table servidorFormasPagamento (
 
-	fk_formasPagamento_cod int,
- 	fk_servidor_cpf varchar(14),
-	foreign key(fk_formasPagamento_cod) references formasPagamento(cod),
+    fk_formasPagamento_cod int,
+    fk_servidor_cpf varchar(14),
+    foreign key(fk_formasPagamento_cod) references formasPagamento(cod),
     foreign key(fk_servidor_cpf) references servidor(cpf),
     primary key(fk_formasPagamento_cod, fk_servidor_cpf)
 
@@ -87,9 +82,9 @@ create table servidorFormasPagamento (
 
 create table servidorProfissao (
 
-	fk_Profissao_cod int,
- 	fk_servidor_cpf varchar(14),
-	foreign key(fk_servidor_cpf) references servidor(cpf),
+    fk_Profissao_cod int,
+    fk_servidor_cpf varchar(14),
+    foreign key(fk_servidor_cpf) references servidor(cpf),
     foreign key(fk_Profissao_cod) references Profissao(cod),
     primary key(fk_servidor_cpf, fk_Profissao_cod)
 
