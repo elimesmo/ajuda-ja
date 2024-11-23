@@ -20,10 +20,16 @@ values("313.114.316-90", "David@gmail.com","david1989","David Henrique de Souza 
 ("312.876.122-05","mg12@GMAIL.COM","Moura412","Miguel","9:00", "17:00","Alagoas, Flexeiras, GUilherme", 165.50,"82 99533-7524"),
 ("312.574.666-02","iranmatador@GMAIL.COM","Matacassaco123","Iran Santana","13:00", "18:00","Alagoas, Rio Largo, Cleito", 160,"82 99533-5534");
 
-insert into profissao(nome,cod) values("informática", 1),
-("professor", 2), ("mecânico", 3),("Encanador", 4), ("Eletricista", 5), ("Babá", 6);
+insert into profissao(nome,cod) values
+("informática", 1),
+("professor", 2), 
+("mecânico", 3),
+("Encanador", 4), 
+("Eletricista", 5),
+("Babá", 6);
 
-insert into formasPagamento(nome,cod) values("pix", 1),
+insert into formasPagamento(nome,cod) values
+("pix", 1),
 ("dinheiro", 2),
 ("cartão", 3);
 
@@ -46,13 +52,22 @@ insert into clienteServidor(fk_cliente_cpf, fk_servidor_cpf) values
 
 
 
-insert into servidorFormasPagamento(fk_formasPagamento_cod, fk_servidor_cpf) values(1, "313.114.316-90"),
-(2, "313.114.316-90"), (1, "312.876.122-05"),(1, "333.224.367-70"),
-(3, "313.114.316-90"),(2, "333.224.367-70");
+insert into servidorFormasPagamento(fk_formasPagamento_cod, fk_servidor_cpf) values
+(1, "313.114.316-90"),
+(2, "313.114.316-90"),
+(1, "312.876.122-05"),
+(1, "333.224.367-70"),
+(3, "313.114.316-90"),
+2, "333.224.367-70");
                       
                                                                          
 
-insert into servidorProfissao(fk_profissao_cod, fk_servidor_cpf) values(1, "313.114.316-90"),(2, "333.224.367-70"),
-(3, "353.114.877-21"), (4, "309.198.752-01"), (5, "312.876.122-05"), (6, "312.574.666-02");
+insert into servidorProfissao(fk_profissao_cod, fk_servidor_cpf) values
+(1, "313.114.316-90"),
+(2, "333.224.367-70"),
+(3, "353.114.877-21"),
+(4, "309.198.752-01"),
+(5, "312.876.122-05"),
+(6, "312.574.666-02");
                       
 	
