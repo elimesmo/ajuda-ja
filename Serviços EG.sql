@@ -35,12 +35,12 @@ FROM
      Profissao p ON sp.fk_Profissao_cod = p.cod where cpf = "333.224.367-70";
 
 
-# Tela de buscar o servidor, filtra pelo endereço do usuário 
+# Tela de buscar o servidor, filtra pelo endereço do servidor mais Próximo ao usuário 
 
  SELECT c.cpf AS cliente_cpf, c.nome AS cliente_nome, c.endereco AS cliente_endereco,
        s.cpf AS servidor_cpf, s.nome AS servidor_nome, s.endereco AS servidor_endereco
 FROM cliente c
-JOIN clienteServidor cs ON c.cpf = cs.fk_cliente_cpf
-JOIN servidor s ON s.cpf = cs.fk_servidor_cpf
+inner join clienteServidor cs ON c.cpf = cs.fk_cliente_cpf
+inner join servidor s ON s.cpf = cs.fk_servidor_cpf
 WHERE c.endereco LIKE "%Maceió%";
 
